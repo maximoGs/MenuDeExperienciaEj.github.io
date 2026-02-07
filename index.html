@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencias Mendoza | Curaduría de Vivencias Exclusivas</title>
+    <meta name="description"
+        content="Descubre experiencias únicas en Mendoza: recorridos históricos, degustaciones privadas y rutas culturales. Una curaduría de vivencias exclusivas.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Grain Overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">Curaduría de Vivencias</p>
+            <h1 class="hero-title">Experiencias<br><span class="gold-accent">Mendoza</span></h1>
+            <p class="hero-subtitle">Donde cada momento se transforma en un recuerdo eterno</p>
+        </div>
+        <div class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Experience Section -->
+        <section class="experiences-section" id="experiencias">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Experiencias</h2>
+                <p class="section-subtitle">Tres caminos hacia lo extraordinario</p>
+            </div>
+
+            <div class="experience-grid">
+                <!-- Premium Experience -->
+                <article class="experience-card reveal" data-experience="premium">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/tumba-vid.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Premium</span>
+                        <h3 class="card-title">Relatos de Tumba y Vid</h3>
+                        <p class="card-mantra">"Donde el silencio del pasado se encuentra con el cuerpo del Malbec."</p>
+                        <p class="card-description">
+                            Recorrido histórico por el Cementerio de Luján de Cuyo seguido de una degustación privada
+                            en Bodega Martino Wines.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-price">$55.000</span>
+                            <button class="btn-reserve" data-exp-name="Relatos de Tumba y Vid"
+                                aria-label="Reservar experiencia Relatos de Tumba y Vid">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cultural Experience -->
+                <article class="experience-card reveal" data-experience="cultural">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/museos.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Cultural</span>
+                        <h3 class="card-title">Inmersión en Museos</h3>
+                        <p class="card-mantra">"Un viaje por el legado artístico y la historia viva de Mendoza."</p>
+                        <p class="card-description">
+                            Tarde de museos seleccionados con guía especializado. Arte, historia y cultura en una
+                            experiencia curada.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-price">$25.000</span>
+                            <button class="btn-reserve" data-exp-name="Inmersión en Museos"
+                                aria-label="Reservar experiencia Inmersión en Museos">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bohemia Experience -->
+                <article class="experience-card reveal" data-experience="bohemia">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/ateliers.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Bohemia</span>
+                        <h3 class="card-title">Ruta de Ateliers</h3>
+                        <p class="card-mantra">"El pulso creativo de la ciudad: íntimo, bohemio y auténtico."</p>
+                        <p class="card-description">
+                            Visita exclusiva a talleres de artistas locales. Una propuesta accesible para sumergirse en
+                            el arte mendocino.
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-price">$15.000</span>
+                            <button class="btn-reserve" data-exp-name="Ruta de Ateliers"
+                                aria-label="Reservar experiencia Ruta de Ateliers">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-brand">Experiencias Mendoza</p>
+            <p class="footer-tagline">Curaduría de vivencias exclusivas</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
