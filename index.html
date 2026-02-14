@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencias Mendoza | Curaduría de Vivencias Exclusivas</title>
     <meta name="description"
-        content="Descubre experiencias únicas en Mendoza: recorridos históricos, degustaciones privadas y rutas culturales. Una curaduría de vivencias exclusivas.">
+        content="Descubre experiencias únicas en Mendoza: recorridos históricos, degustaciones privadas, rutas culturales y productos artesanales. Una curaduría de vivencias exclusivas.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
     <div class="grain-overlay" aria-hidden="true"></div>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="top">
         <div class="hero-content">
             <p class="hero-tagline">Curaduría de Vivencias</p>
             <h1 class="hero-title">Experiencias<br><span class="gold-accent">Mendoza</span></h1>
@@ -35,42 +35,110 @@
         </div>
     </header>
 
+    <!-- Sticky Navbar -->
+    <nav class="sticky-nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">EM</a>
+            <div class="nav-links">
+                <a href="#experiencias" class="nav-link active">Experiencias</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#" class="nav-link nav-contact" id="navContactBtn">Contacto</a>
+            </div>
+            <button class="cart-toggle" id="cartToggle" aria-label="Abrir carrito">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </button>
+        </div>
+    </nav>
+
     <!-- Main Content -->
     <main>
-        <!-- Experience Section -->
+
+        <!-- ================================================================
+             EXPERIENCIAS SECTION
+             ================================================================ -->
         <section class="experiences-section" id="experiencias">
             <div class="section-header">
                 <h2 class="section-title">Nuestras Experiencias</h2>
-                <p class="section-subtitle">Tres caminos hacia lo extraordinario</p>
+                <p class="section-subtitle">Nueve caminos hacia lo extraordinario</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="enologica">Enológica</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+                <button class="filter-btn" data-filter="bohemia">Bohemia</button>
             </div>
 
             <div class="experience-grid">
-                <!-- Premium Experience -->
-                <article class="experience-card reveal" data-experience="premium">
+
+                <!-- ===== ENOLÓGICA ===== -->
+                <article class="experience-card reveal" data-category="enologica">
                     <div class="card-image-container">
                         <div class="card-image" style="background-image: url('assets/tumba-vid.jpg');"></div>
                         <div class="card-overlay"></div>
                     </div>
                     <div class="card-content">
-                        <span class="card-badge">Premium</span>
+                        <span class="card-badge">Enológica</span>
                         <h3 class="card-title">Relatos de Tumba y Vid</h3>
-                        <p class="card-mantra">"Donde el silencio del pasado se encuentra con el cuerpo del Malbec."</p>
-                        <p class="card-description">
-                            Recorrido histórico por el Cementerio de Luján de Cuyo seguido de una degustación privada
-                            en Bodega Martino Wines.
+                        <p class="card-mantra">"Donde el silencio del pasado se encuentra con el cuerpo del Malbec."
                         </p>
+                        <p class="card-description">Recorrido histórico por el Cementerio de Luján de Cuyo seguido de
+                            una degustación privada en Bodega Martino Wines.</p>
                         <div class="card-footer">
                             <span class="card-price">$55.000</span>
                             <button class="btn-reserve" data-exp-name="Relatos de Tumba y Vid"
-                                aria-label="Reservar experiencia Relatos de Tumba y Vid">
-                                Reservar
-                            </button>
+                                aria-label="Reservar experiencia Relatos de Tumba y Vid">Reservar</button>
                         </div>
                     </div>
                 </article>
 
-                <!-- Cultural Experience -->
-                <article class="experience-card reveal" data-experience="cultural">
+                <article class="experience-card reveal" data-category="enologica">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/sunset-wine.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Enológica</span>
+                        <h3 class="card-title">Sunset Wine Tasting</h3>
+                        <p class="card-mantra">"El Malbec se revela con la caída del sol sobre los Andes."</p>
+                        <p class="card-description">Degustación al atardecer en Bodega Centenario con vista panorámica a
+                            la cordillera. Incluye tabla de quesos artesanales.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$40.000</span>
+                            <button class="btn-reserve" data-exp-name="Sunset Wine Tasting"
+                                aria-label="Reservar experiencia Sunset Wine Tasting">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card reveal" data-category="enologica">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/vendimia.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Enológica</span>
+                        <h3 class="card-title">Vendimia Privada</h3>
+                        <p class="card-mantra">"Cosecha tu propio vino: de la cepa a la copa, sin intermediarios."</p>
+                        <p class="card-description">Jornada exclusiva de cosecha manual con enólogo privado. Incluye
+                            almuerzo gourmet y botella personalizada.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$70.000</span>
+                            <button class="btn-reserve" data-exp-name="Vendimia Privada"
+                                aria-label="Reservar experiencia Vendimia Privada">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== CULTURAL ===== -->
+                <article class="experience-card reveal" data-category="cultural">
                     <div class="card-image-container">
                         <div class="card-image" style="background-image: url('assets/museos.jpg');"></div>
                         <div class="card-overlay"></div>
@@ -79,22 +147,56 @@
                         <span class="card-badge">Cultural</span>
                         <h3 class="card-title">Inmersión en Museos</h3>
                         <p class="card-mantra">"Un viaje por el legado artístico y la historia viva de Mendoza."</p>
-                        <p class="card-description">
-                            Tarde de museos seleccionados con guía especializado. Arte, historia y cultura en una
-                            experiencia curada.
-                        </p>
+                        <p class="card-description">Tarde de museos seleccionados con guía especializado. Arte,
+                            historia y cultura en una experiencia curada.</p>
                         <div class="card-footer">
                             <span class="card-price">$25.000</span>
                             <button class="btn-reserve" data-exp-name="Inmersión en Museos"
-                                aria-label="Reservar experiencia Inmersión en Museos">
-                                Reservar
-                            </button>
+                                aria-label="Reservar experiencia Inmersión en Museos">Reservar</button>
                         </div>
                     </div>
                 </article>
 
-                <!-- Bohemia Experience -->
-                <article class="experience-card reveal" data-experience="bohemia">
+                <article class="experience-card reveal" data-category="cultural">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/opera.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Cultural</span>
+                        <h3 class="card-title">Noche de Ópera & Cena</h3>
+                        <p class="card-mantra">"Cuando la música y la gastronomía se funden en un solo acto."</p>
+                        <p class="card-description">Velada lírica en el Teatro Independencia seguida de cena maridaje
+                            en restaurante de autor.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$45.000</span>
+                            <button class="btn-reserve" data-exp-name="Noche de Ópera & Cena"
+                                aria-label="Reservar experiencia Noche de Ópera y Cena">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card reveal" data-category="cultural">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/colonial.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Cultural</span>
+                        <h3 class="card-title">Mendoza Colonial Walking Tour</h3>
+                        <p class="card-mantra">"Cada calle guarda un secreto; nosotros tenemos la llave."</p>
+                        <p class="card-description">Caminata guiada por el casco histórico con relatos de la Mendoza
+                            pre-terremoto. Incluye merienda en confitería clásica.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$18.000</span>
+                            <button class="btn-reserve" data-exp-name="Mendoza Colonial Walking Tour"
+                                aria-label="Reservar experiencia Mendoza Colonial Walking Tour">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== BOHEMIA ===== -->
+                <article class="experience-card reveal" data-category="bohemia">
                     <div class="card-image-container">
                         <div class="card-image" style="background-image: url('assets/ateliers.jpg');"></div>
                         <div class="card-overlay"></div>
@@ -103,15 +205,188 @@
                         <span class="card-badge">Bohemia</span>
                         <h3 class="card-title">Ruta de Ateliers</h3>
                         <p class="card-mantra">"El pulso creativo de la ciudad: íntimo, bohemio y auténtico."</p>
-                        <p class="card-description">
-                            Visita exclusiva a talleres de artistas locales. Una propuesta accesible para sumergirse en
-                            el arte mendocino.
-                        </p>
+                        <p class="card-description">Visita exclusiva a talleres de artistas locales. Una propuesta
+                            accesible para sumergirse en el arte mendocino.</p>
                         <div class="card-footer">
                             <span class="card-price">$15.000</span>
                             <button class="btn-reserve" data-exp-name="Ruta de Ateliers"
-                                aria-label="Reservar experiencia Ruta de Ateliers">
-                                Reservar
+                                aria-label="Reservar experiencia Ruta de Ateliers">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card reveal" data-category="bohemia">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/ceramica.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Bohemia</span>
+                        <h3 class="card-title">Taller de Cerámica en los Andes</h3>
+                        <p class="card-mantra">"Moldea la arcilla andina con tus propias manos."</p>
+                        <p class="card-description">Workshop de cerámica con maestro alfarero en taller de montaña.
+                            Incluye materiales y tu pieza terminada.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$20.000</span>
+                            <button class="btn-reserve" data-exp-name="Taller de Cerámica en los Andes"
+                                aria-label="Reservar experiencia Taller de Cerámica en los Andes">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card reveal" data-category="bohemia">
+                    <div class="card-image-container">
+                        <div class="card-image" style="background-image: url('assets/jazz.jpg');"></div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-badge">Bohemia</span>
+                        <h3 class="card-title">Live Jazz & Coctelería de Autor</h3>
+                        <p class="card-mantra">"Notas que se beben: música en vivo y mixología de vanguardia."</p>
+                        <p class="card-description">Noche exclusiva de jazz en bar speakeasy con carta de cócteles
+                            diseñados con destilados mendocinos.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$30.000</span>
+                            <button class="btn-reserve" data-exp-name="Live Jazz & Coctelería de Autor"
+                                aria-label="Reservar experiencia Live Jazz y Coctelería de Autor">Reservar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SHOP SECTION
+             ================================================================ -->
+        <section class="shop-section" id="shop">
+            <div class="section-header">
+                <h2 class="section-title">Shop</h2>
+                <p class="section-subtitle">Lleva Mendoza contigo</p>
+            </div>
+
+            <div class="shop-grid">
+
+                <article class="product-card reveal" data-product-id="malbec-reserva"
+                    data-product-name="Caja Malbec Reserva (6 botellas)" data-product-price="85000">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('assets/shop-malbec.jpg');"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Caja Malbec Reserva</h3>
+                        <p class="product-detail">6 botellas · Cosecha seleccionada</p>
+                        <div class="product-footer">
+                            <span class="product-price">$85.000</span>
+                            <button class="btn-add-cart" aria-label="Agregar Caja Malbec al carrito">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-product-id="kit-cata" data-product-name="Kit de Cata Premium"
+                    data-product-price="35000">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('assets/shop-cata.jpg');"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kit de Cata Premium</h3>
+                        <p class="product-detail">Copas, decantador y guía de aromas</p>
+                        <div class="product-footer">
+                            <span class="product-price">$35.000</span>
+                            <button class="btn-add-cart" aria-label="Agregar Kit de Cata al carrito">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-product-id="poncho"
+                    data-product-name="Poncho Artesanal Mendocino" data-product-price="45000">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('assets/shop-poncho.jpg');"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Poncho Artesanal Mendocino</h3>
+                        <p class="product-detail">Tejido a mano · Lana de oveja</p>
+                        <div class="product-footer">
+                            <span class="product-price">$45.000</span>
+                            <button class="btn-add-cart" aria-label="Agregar Poncho al carrito">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-product-id="aceite"
+                    data-product-name="Aceite de Oliva Finca Privada" data-product-price="12000">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('assets/shop-aceite.jpg');"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Aceite de Oliva Finca Privada</h3>
+                        <p class="product-detail">Extra virgen · Prensado en frío</p>
+                        <div class="product-footer">
+                            <span class="product-price">$12.000</span>
+                            <button class="btn-add-cart" aria-label="Agregar Aceite al carrito">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-product-id="giftbox" data-product-name="Experiencia Gift Box"
+                    data-product-price="120000">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('assets/shop-giftbox.jpg');"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Experiencia Gift Box</h3>
+                        <p class="product-detail">Vino + cata + experiencia para 2</p>
+                        <div class="product-footer">
+                            <span class="product-price">$120.000</span>
+                            <button class="btn-add-cart" aria-label="Agregar Gift Box al carrito">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-product-id="vela" data-product-name="Vela Aromática Viñedos"
+                    data-product-price="8000">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('assets/shop-vela.jpg');"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vela Aromática "Viñedos"</h3>
+                        <p class="product-detail">Cera de soja · Notas de roble y uva</p>
+                        <div class="product-footer">
+                            <span class="product-price">$8.000</span>
+                            <button class="btn-add-cart" aria-label="Agregar Vela al carrito">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -119,6 +394,40 @@
             </div>
         </section>
     </main>
+
+    <!-- Cart Drawer Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Cart Drawer -->
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+        <div class="cart-header">
+            <h3 class="cart-title">Tu Carrito</h3>
+            <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Tu carrito está vacío</p>
+        </div>
+        <div class="cart-summary" id="cartSummary" style="display: none;">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <span class="cart-total" id="cartTotal">$0</span>
+            </div>
+            <button class="btn-checkout" id="checkoutBtn" aria-label="Finalizar compra por WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                    <path
+                        d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+                </svg>
+                Checkout vía WhatsApp
+            </button>
+        </div>
+    </aside>
 
     <!-- Footer -->
     <footer class="footer">
