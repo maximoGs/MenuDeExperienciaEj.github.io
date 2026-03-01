@@ -54,6 +54,10 @@ MenuDeExperiencia/
 | **Bohemia** | Ruta de Ateliers | Visita a talleres de artistas locales | $22.500 |
 | **Bohemia** | Taller de Cerámica en los Andes | Workshop de cerámica con maestro alfarero | $30.000 |
 | **Bohemia** | Live Jazz & Coctelería de Autor | Noche de jazz en bar speakeasy | $45.000 |
+| **Vida Nocturna** | San Patricio en New Rock | Entradas fiesta San Patricio + Sorteo liberadas | $16.000 |
+| **Vida Nocturna** | Fiesta Frankie en Casa Roja | Pases Casa Roja | $15.000 |
+| **Vida Nocturna** | Upstairs Sheraton (Pase Individual) | Acceso rooftop | $36.000 |
+| **Vida Nocturna** | Upstairs Sheraton (Pase 2x) | VIP rooftop para 2 | $55.000 |
 
 ---
 
